@@ -1,2 +1,2 @@
 
-## Webpack + Babel + Eslint Workshop and Short Assignment 3
+## react short assignment
