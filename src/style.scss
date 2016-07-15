@@ -3,17 +3,27 @@ $backgroundcolor: rgb(98%, 98%, 98%);
 
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: $fontcolor;
-  background-color: $backgroundcolor;
-  margin: 50px;
+  font-family: "Roboto", sans-serif !important;
+  color: $fontcolor !important;
+  background-color: $backgroundcolor !important;
+  margin: 50px !important;
 }
+
+#main {
+  background-color: transparent;
+}
+
+
+
 
 
 #search-bar {
   margin-bottom: 20px;
+  margin-top: 20px;
+  width: 40%;
 
   input {
+    width: 100%;
     font-size: 1.5em;
     border-radius: .25em;
   }
@@ -22,16 +32,43 @@ body {
 
 #video-section {
   display: flex;
-
+  ul {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    padding-left: 0px;
+  }
   li {
     list-style: none;
     cursor: pointer;
     display: flex;
     width: 25vw;
     padding: 10px;
+    border-bottom: solid thin white;
   }
   li:hover {
     background: darken( $backgroundcolor, 10% );
+  }
+
+  .video-detail {
+    border-top: solid;
+    border-top-width: thin;
+    border-color: teal;
+    padding-top: 20px;
+
+    .details {
+      margin-top: 20px;
+      border: solid thin gray;
+      padding: 20px;
+      border-top: none;
+    }
+  }
+
+  .embed-responsive {
+    box-shadow: 10px 10px 1em gray;
+  }
+
+  .video-list {
+
   }
 
 }
